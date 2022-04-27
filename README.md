@@ -1,3 +1,3 @@
-# Glee-Club-Work-Days
+# Tools-For-The-Ass-Man
 
-Website where Wheaton residents can request for work to be done and current members of the Wheaton College Men's Glee Club can sign up for work days.
+This is a tool for the Assistant Business Manager in the Wheaton College Men's Glee Club (affectionately called the Ass Man). Hopefully this tool can be a useful service for future Ass Men in the Glee Club. 
