@@ -1,13 +1,20 @@
+
+l = [];
 const txt1 = document.getElementById("f_name")
-        const btn1 = document.getElementById("btn1")
-        const out1 = document.getElementById('output1')
+const btn1 = document.getElementById("btn1")
+const out1 = document.getElementById('output1')
 
-        function fun1() {
-            out1.innerHTML = txt1.value;
-        }
-
-        btn1.addEventListener('click', fun1)
-
-function user(first, last, number){
-
+function store() {
+    out1.innerHTML = txt1.value;
+    console.log(txt1.value)
+    l.push(txt1.value)
+    console.log(l)
 }
+
+function out(){
+    
+}
+
+btn1.addEventListener('click', out)
+
+document.getElementById("demo").innerHTML = l
