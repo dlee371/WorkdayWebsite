@@ -25,23 +25,15 @@
         <label for="f_name">First Name</label>
         <input type="text" id="f_name" placeholder="First Name"></input>
         <input type="button" id="btn1" value="Enter">
+        <ul>
+            <li class="output" id="output1"></li>
+        </ul>
     </ul>
-    <p class="output" id="output1"></p>
     <p>Get that money money money $$$</p>
     <img src="when-the-money.gif" alt="Money WWE">
 
-    <script>
-        const txt1 = document.getElementById("f_name")
-        const btn1 = document.getElementById("btn1")
-        const out1 = document.getElementById('output1')
+    <script src="scripts/main.js"></script>
 
-        function fun1() {
-            out1.innerHTML = txt1.value;
-        }
-
-        btn1.addEventListener('click', fun1)
-
-    </script>
 </body>
 
 </html>
