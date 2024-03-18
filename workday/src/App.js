@@ -14,7 +14,7 @@ function App() {
       day: "4/20 at 4:20",
       loc: "1234 Asdf Blvd.",
       peeps: 4,
-      signUpButton: <button>Sign up</button>
+      // signUpButton: <button>Sign up</button>
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ function App() {
       day: "4/20 at 4:20",
       loc: "42069 Asdf Blvd.",
       peeps: 4,
-      signUpButton: <button>Sign up</button>
+      // signUpButton: <button>Sign up</button>
     }
   ])
 

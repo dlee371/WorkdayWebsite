@@ -4,7 +4,8 @@ import { useState } from 'react'
 const AddJob = ({ onAdd }) => {
     const [text, setText] = useState('')
     const [day, setDay] = useState('')
-    const [reminder, setReminder] = useState(false)
+    const [loc, setLoc] = useState('')
+    const [peeps, setPeeps] = useState(0)
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -14,11 +15,12 @@ const AddJob = ({ onAdd }) => {
             return
         }
 
-        onAdd({ text, day, reminder})
+        onAdd({ text, day, loc, peeps })
 
         setText('')
         setDay('')
-        setReminder(false)
+        setLoc('')
+        setPeeps(0)
     }
     return (
         <form className='add-form' onSubmit={onSubmit}>
@@ -32,11 +34,15 @@ const AddJob = ({ onAdd }) => {
                 <input type='text' placeholder="Add Day and Time"
                 value={day} onChange={(e) => setDay(e.target.value)}/>
             </div>
+            <div className='form-control'>
+                <label>Location</label>
+                <input type='text' placeholder="Add Location"
+                value={loc} onChange={(e) => setLoc(e.target.value)}/>
+            </div>
             <div className='form-control form-control-check'>
-                <label>Set Reminder</label>
-                <input type='checkbox' 
-                checked={reminder}
-                value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
+                <label>Num Peeps</label>
+                <input type='number' 
+                value={peeps} onChange={(e) => setPeeps(e.target.value)} />
             </div>
 
             <input type='submit' value='Save Task' 
