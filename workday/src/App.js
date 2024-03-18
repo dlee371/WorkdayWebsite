@@ -28,6 +28,7 @@ function App() {
 
   //Add Job
   const addJob = (job) => {
+    console.log(job)
     // console.log(job);
     const id = Math.floor(Math.random() * 10000) + 1
     const newJob = { id, ...job}
@@ -40,16 +41,12 @@ function App() {
   }
 
   return (
-    <div>
-      <body>
-      <div>
+    <div className='container' >
       <h1 className='title'>Workday Website</h1>
       <Header onAdd={() => setShowAddJob(!showAddJob)}
       showAdd={showAddJob} />
       {showAddJob && <AddJob onAdd={addJob} />}
-      {jobs.length > 0 ? <Jobs jobs={jobs} onDelete={deleteJob} /> : 'no tasks to show'}
-    </div>
-    </body>
+      {jobs.length > 0 ? <Jobs jobs={jobs} onDelete={deleteJob} /> : 'no jobs to show'}
     </div>
   );
 }

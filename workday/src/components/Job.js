@@ -3,6 +3,7 @@
 const Job = ({ job, onDelete }) => {
     return (
         <div>
+            <p>{job.text}</p>
             <p>{job.day}</p>
         </div>
     )

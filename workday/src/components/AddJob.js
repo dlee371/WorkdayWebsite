@@ -11,7 +11,7 @@ const AddJob = ({ onAdd }) => {
         e.preventDefault()
 
         if(!text){
-            alert('Please add a task')
+            alert('Please add a job')
             return
         }
 
@@ -25,8 +25,8 @@ const AddJob = ({ onAdd }) => {
     return (
         <form className='add-form' onSubmit={onSubmit}>
             <div className='form-control'>
-                <label>Task</label>
-                <input type='text' placeholder="Add Task"
+                <label>Job</label>
+                <input type='text' placeholder="Add Job"
                 value={text} onChange={(e) => setText(e.target.value)} />
             </div>
             <div className='form-control'>
@@ -45,7 +45,7 @@ const AddJob = ({ onAdd }) => {
                 value={peeps} onChange={(e) => setPeeps(e.target.value)} />
             </div>
 
-            <input type='submit' value='Save Task' 
+            <input type='submit' value='Save Job' 
             className='btn btn-block'/> 
         </form>
     )
