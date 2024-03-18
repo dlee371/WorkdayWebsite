@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import AddJob from './components/AddJob'
+import Jobs from './components/Jobs'
 
 function App() {
 
-  const [setAddJob, setShowAddJob] = useState (false)
+  const [showAddJob, setShowAddJob] = useState (false)
 
   const [jobs, setJobs] = useState([
     {
@@ -33,14 +35,19 @@ function App() {
   }
 
   //delete job
-
+  const deleteJob = (id) => {
+    setJobs(jobs.filter((job) => job.id !==id))
+  }
 
   return (
     <div>
       <body>
       <div>
       <h1 className='title'>Workday Website</h1>
-      <Header name='David' weather='sunny' />
+      <Header onAdd={() => setShowAddJob(!showAddJob)}
+      showAdd={showAddJob} />
+      {showAddJob && <AddJob onAdd={addJob} />}
+      {jobs.length > 0 ? <Jobs jobs={jobs} onDelete={deleteJob} /> : 'no tasks to show'}
     </div>
     </body>
     </div>
