@@ -5,6 +5,8 @@ const Job = ({ job, onDelete }) => {
         <div>
             <p>{job.text}</p>
             <p>{job.day}</p>
+            <p>{job.loc}</p>
+            <p>{job.peeps}</p>
         </div>
     )
 }
