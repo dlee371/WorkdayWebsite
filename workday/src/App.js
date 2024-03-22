@@ -8,22 +8,20 @@ function App() {
   const [showAddJob, setShowAddJob] = useState (false)
 
   const [jobs, setJobs] = useState([
-    {
-      id: 1,
-      text: "Moving furniture",
-      day: "4/20 at 4:20",
-      loc: "1234 Asdf Blvd.",
-      peeps: 4,
-      // signUpButton: <button>Sign up</button>
-    },
-    {
-      id: 2,
-      text: "Raking leaves",
-      day: "4/20 at 4:20",
-      loc: "42069 Asdf Blvd.",
-      peeps: 4,
-      // signUpButton: <button>Sign up</button>
-    }
+    // {
+    //   id: 1,
+    //   text: "Moving furniture",
+    //   day: "4/20 at 4:20",
+    //   loc: "1234 Asdf Blvd.",
+    //   peeps: 4,
+    // },
+    // {
+    //   id: 2,
+    //   text: "Raking leaves",
+    //   day: "4/20 at 4:20",
+    //   loc: "42069 Asdf Blvd.",
+    //   peeps: 4,
+    // }
   ])
 
   //Add Job
