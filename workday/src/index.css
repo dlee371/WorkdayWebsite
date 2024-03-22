@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 
+
+.digs {
+  width: 50px;
+}
+
 .box {
   border-style: solid;
-  width: 200px;
+  width: 300px;
   height: auto;
   align-items: center;
   margin: auto;
+  margin-bottom: 30px;
+
 }
 
 .gift {

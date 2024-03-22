@@ -39,7 +39,7 @@ const AddJob = ({ onAdd }) => {
                 <input type='text' placeholder="Add Location"
                 value={loc} onChange={(e) => setLoc(e.target.value)}/>
             </div>
-            <div className='form-control form-control-check'>
+            <div className='form-control digs'>
                 <label>Num Peeps</label>
                 <input type='number' 
                 value={peeps} onChange={(e) => setPeeps(e.target.value)} />

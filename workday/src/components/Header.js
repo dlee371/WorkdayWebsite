@@ -11,10 +11,6 @@ const Header = ({ title, onAdd, showAdd }) => {
     )
 }
 
-// Header.defaultProps = {
-//     title: 'Workday',
-// }
-
 Header.propTypes = {
     title: PropTypes.string.isRequired,
 }
