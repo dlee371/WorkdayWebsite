@@ -10,7 +10,7 @@ const Job = ({ job, onDelete }) => {
             onClick={() => onDelete(job.id)}/></h3>
             <p>{job.day}</p>
             <p>{job.loc}</p>
-            <p>Number of bros needed: {job.peeps}</p>
+            <p>{job.peeps}</p>
             </div>
         </div>
     )

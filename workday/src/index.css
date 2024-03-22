@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 
+.righty {
+  float: right;
+}
 
 .digs {
-  width: 50px;
+  width: 125px;
 }
 
 .box {
@@ -13,6 +16,7 @@
   align-items: center;
   margin: auto;
   margin-bottom: 30px;
+  margin-top: 30px;
 
 }
 

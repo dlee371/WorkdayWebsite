@@ -40,7 +40,7 @@ const AddJob = ({ onAdd }) => {
                 value={loc} onChange={(e) => setLoc(e.target.value)}/>
             </div>
             <div className='form-control digs'>
-                <label>Num Peeps</label>
+                <label>Number of Bros</label>
                 <input type='number' 
                 value={peeps} onChange={(e) => setPeeps(e.target.value)} />
             </div>
