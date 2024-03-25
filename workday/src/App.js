@@ -3,6 +3,7 @@ import Header from './components/Header'
 import AddJob from './components/AddJob'
 import Jobs from './components/Jobs'
 
+
 function App() {
 
   const [showAddJob, setShowAddJob] = useState (false)
@@ -31,7 +32,7 @@ function App() {
       {showAddJob && <AddJob onAdd={addJob} />}
     </div>
     <div className='gift'>
-    {jobs.length > 0 ? <Jobs jobs={jobs} onDelete={deleteJob} /> : 'No Jobs To Show'}
+      {jobs.length > 0 ? <Jobs jobs={jobs} onDelete={deleteJob} /> : 'No Jobs To Show'}
     </div>
     </>
   );
