@@ -3,7 +3,7 @@ import Job from './Job'
 const Jobs = ({jobs, onDelete }) => {
     return (
         <>
-        {jobs.map((job) => (<Job key={job.id} job={job} onDelete={onDelete}/>))}
+        {jobs.map((job, index) => (<Job key={index} job={job} onDelete={onDelete}/>))}
         </>
     )
 }
