@@ -1,32 +1,18 @@
 {
   "jobs": [
     {
-      "id": 1,
-      "text": "Moving furniture",
-      "day": null,
-      "loc": "1234 Asdf Blvd.",
-      "peeps": 4
+      "id": "0cba",
+      "text": "job1",
+      "day": "2024-04-25T15:16",
+      "loc": "ur mom",
+      "peeps": "1"
     },
     {
-      "id": 2,
-      "text": "Raking leaves",
-      "day": null,
-      "loc": "42069 Asdf Blvd.",
-      "peeps": 4
-    },
-    {
-      "id": "e912",
-      "text": "moving boxes",
-      "day": "2024-04-26T15:52",
-      "loc": "1234 ur mom's house",
+      "id": "891e",
+      "text": "job 2",
+      "day": "2024-04-17T15:16",
+      "loc": "1234 asdf blvd",
       "peeps": "2"
-    },
-    {
-      "id": "89d5",
-      "text": "moving ur mom",
-      "day": "2024-04-19T15:54",
-      "loc": "369 Elm Street",
-      "peeps": "5"
     }
   ]
 }
